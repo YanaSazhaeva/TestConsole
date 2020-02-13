@@ -14,12 +14,12 @@ namespace TestConsole
             String x_str = Console.ReadLine();
             Console.Write("Введите y>");
             String y_str = Console.ReadLine();
-            int x = int.Parse(x_str);
-            int y = int.Parse(y_str);
+            double x = double.Parse(x_str);
+            double y = double.Parse(y_str);
 
-            int z = x + y;
+            double z = x / y; //F3 3 знака после запятой
 
-            Console.WriteLine("{0}+{1}={2}", x, y, z); // Console.WriteLine($"{x}+{y}={z}");
+            Console.WriteLine("{0}/{1}={2:F3}", x, y, z); // Console.WriteLine($"{x}+{y}={z}");
             Console.ReadLine();
 
 
